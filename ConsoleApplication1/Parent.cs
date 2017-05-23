@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace ConsoleApplication1
 {
-    class Program
+    class Parent
     {
-        static void Main(string[] args)
+        public int Add(int x, int y)
         {
-
-            Child c = new Child();
-            c.Add(4, 5, 6);  //Child有了自己的方法
+            Console.WriteLine( x+y);
+            return (x + y);
         }
     }
 }
